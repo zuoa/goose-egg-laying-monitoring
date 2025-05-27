@@ -1,0 +1,204 @@
+// 导入主题变量
+@import './styles/theme.less';
+
+// 全局样式重置
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
+}
+
+// 强制覆盖顶部导航栏样式
+.ant-pro-layout-top .ant-pro-global-header,
+.ant-pro-layout-top .ant-pro-top-nav-header,
+.ant-pro-layout-top .ant-pro-global-header-logo,
+.ant-pro-layout-top .ant-pro-top-nav-header-main {
+  background-color: #52c41a !important;
+}
+
+// 强制覆盖菜单文字颜色
+.ant-pro-layout-top {
+  .ant-menu {
+    background: transparent !important;
+    
+    .ant-menu-item,
+    .ant-menu-submenu {
+      color: #fff !important;
+      
+      .anticon {
+        color: #fff !important;
+      }
+      
+      &.ant-menu-item-selected,
+      &.ant-menu-item-active {
+        color: #fff !important;
+        border-bottom: 2px solid #fff !important;
+        
+        .anticon {
+          color: #fff !important;
+        }
+      }
+      
+      &:hover {
+        color: #fff !important;
+        background-color: rgba(255, 255, 255, 0.15) !important;
+        
+        .anticon {
+          color: #fff !important;
+        }
+      }
+    }
+  }
+}
+
+// 强制覆盖选中状态样式
+.ant-menu-horizontal > .ant-menu-item-selected,
+.ant-menu-horizontal > .ant-menu-item-active,
+.ant-menu-horizontal > .ant-menu-submenu-selected,
+.ant-menu-horizontal > .ant-menu-submenu-active {
+  color: #fff !important;
+  border-bottom: 2px solid #fff !important;
+  
+  &::after {
+    border-bottom-color: #fff !important;
+  }
+  
+  .anticon {
+    color: #fff !important;
+  }
+}
+
+// 农业主题特殊样式
+.agriculture-theme {
+  // 卡片样式
+  .ant-card {
+    border-radius: 8px;
+    box-shadow: @box-shadow-card;
+    
+    &:hover {
+      box-shadow: 0 4px 12px rgba(82, 196, 26, 0.15);
+    }
+  }
+
+  // 按钮样式增强
+  .ant-btn-primary {
+    background: linear-gradient(135deg, @primary-color 0%, @primary-color-hover 100%);
+    border: none;
+    
+    &:hover {
+      background: linear-gradient(135deg, @primary-color-hover 0%, @primary-color 100%);
+    }
+  }
+
+  // 表格样式
+  .ant-table {
+    .ant-table-thead > tr > th {
+      background-color: #f6ffed;
+      color: @primary-color-active;
+      font-weight: 600;
+    }
+  }
+
+  // 统计数值样式
+  .statistic-value {
+    color: @primary-color;
+    font-weight: 600;
+  }
+}
+
+// 页面容器
+.page-container {
+  padding: 24px;
+  background-color: @layout-body-background;
+  min-height: calc(100vh - 64px);
+}
+
+// 农业数据可视化颜色
+.chart-colors {
+  --chart-color-1: #52c41a;
+  --chart-color-2: #73d13d;
+  --chart-color-3: #95de64;
+  --chart-color-4: #b7eb8f;
+  --chart-color-5: #d9f7be;
+  --chart-color-6: #f6ffed;
+}
+
+// 响应式布局
+@media (max-width: 768px) {
+  .page-container {
+    padding: 16px;
+  }
+}
+
+// 顶部布局样式优化 - 使用更具体的选择器
+.ant-pro-layout {
+  // 当布局为顶部模式时
+  &.ant-pro-layout-top {
+    // 顶部导航栏背景色
+    .ant-pro-global-header,
+    .ant-pro-top-nav-header {
+      background: @primary-color !important;
+      
+      // Logo 区域
+      .ant-pro-global-header-logo {
+        a {
+          color: #fff !important;
+        }
+        
+        h1 {
+          color: #fff !important;
+          margin: 0;
+          font-size: 18px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          max-width: 300px;
+        }
+      }
+    }
+    
+    // 顶部菜单
+    .ant-pro-top-nav-header-main {
+      .ant-pro-top-nav-header-menu {
+        .ant-menu {
+          background: transparent !important;
+          border-bottom: none;
+          
+          &.ant-menu-horizontal {
+            > .ant-menu-item,
+            > .ant-menu-submenu {
+              color: rgba(255, 255, 255, 0.85) !important;
+              
+              .anticon {
+                color: rgba(255, 255, 255, 0.85) !important;
+              }
+              
+              &:hover {
+                color: #fff !important;
+                background-color: rgba(255, 255, 255, 0.15) !important;
+                
+                .anticon {
+                  color: #fff !important;
+                }
+              }
+              
+              &.ant-menu-item-selected {
+                color: #fff !important;
+                background-color: rgba(255, 255, 255, 0.2) !important;
+                border-bottom: 2px solid #fff;
+                
+                .anticon {
+                  color: #fff !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+} 

@@ -1,0 +1,77 @@
+/* 顶部布局样式覆盖 */
+
+/* 顶部导航栏背景色 */
+.ant-pro-layout .ant-layout-header,
+.ant-pro-layout .ant-pro-layout-header,
+.ant-pro-top-nav-header {
+  background: #52c41a !important;
+}
+
+/* Logo和标题颜色 */
+.ant-pro-layout .ant-pro-layout-header-title,
+.ant-pro-layout .ant-pro-layout-header-logo a {
+  color: #fff !important;
+}
+
+/* 限制标题宽度 */
+.ant-pro-layout .ant-pro-layout-header-title {
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 菜单背景透明 */
+.ant-pro-layout .ant-menu.ant-menu-horizontal {
+  background: transparent !important;
+  border-bottom: none !important;
+}
+
+/* 菜单项样式 */
+.ant-pro-layout .ant-menu.ant-menu-horizontal > .ant-menu-item,
+.ant-pro-layout .ant-menu.ant-menu-horizontal > .ant-menu-submenu {
+  color: rgba(255, 255, 255, 0.85) !important;
+  border-bottom: 2px solid transparent;
+  margin: 0 8px !important;
+  padding: 0 12px !important;
+}
+
+/* 菜单项悬停样式 */
+.ant-pro-layout .ant-menu.ant-menu-horizontal > .ant-menu-item:hover,
+.ant-pro-layout .ant-menu.ant-menu-horizontal > .ant-menu-submenu:hover {
+  color: #fff !important;
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  border-bottom-color: transparent !important;
+}
+
+/* 选中的菜单项样式 */
+.ant-pro-layout .ant-menu.ant-menu-horizontal > .ant-menu-item-selected {
+  color: #fff !important;
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  border-bottom: 2px solid #fff !important;
+}
+
+/* 图标颜色 */
+.ant-pro-layout .ant-menu.ant-menu-horizontal .anticon {
+  color: inherit !important;
+}
+
+/* 确保顶部布局模式下的特定样式 */
+.ant-pro-layout[data-layout="top"] .ant-pro-layout-header {
+  background: #52c41a !important;
+}
+
+/* 强制覆盖默认的蓝色主题 */
+.ant-pro-layout .ant-pro-layout-header {
+  background: #52c41a !important;
+}
+
+/* 确保子菜单样式 */
+.ant-pro-layout .ant-menu-sub.ant-menu-inline {
+  background: #52c41a !important;
+}
+
+/* 确保顶部右侧内容区域样式 */
+.ant-pro-layout .ant-pro-layout-header-right {
+  color: #fff !important;
+} 

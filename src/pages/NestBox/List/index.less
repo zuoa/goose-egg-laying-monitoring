@@ -1,0 +1,101 @@
+.nestBoxCard {
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  }
+
+  .cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #f0f0f0;
+
+    .boxCode {
+      font-size: 18px;
+      font-weight: 600;
+      color: #333;
+    }
+  }
+
+  .sensorInfo {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 16px;
+    padding: 12px;
+    background: #fafafa;
+    border-radius: 6px;
+
+    .sensorItem {
+      text-align: center;
+
+      .label {
+        display: block;
+        margin-bottom: 4px;
+        color: #666;
+        font-size: 12px;
+      }
+
+      .value {
+        font-size: 20px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .occupiedInfo {
+    margin-bottom: 16px;
+    padding: 8px 12px;
+    background: #fff7e6;
+    border-radius: 6px;
+    border: 1px solid #ffe7ba;
+
+    span {
+      margin-left: 8px;
+      color: #d48806;
+      font-size: 14px;
+    }
+
+    .time {
+      display: block;
+      margin-top: 4px;
+      margin-left: 24px;
+      color: #8c6800;
+      font-size: 12px;
+    }
+  }
+
+  .cardFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+    border-top: 1px solid #f0f0f0;
+
+    .eggCount {
+      color: #666;
+      font-size: 14px;
+
+      strong {
+        color: #333;
+        font-size: 18px;
+      }
+    }
+
+    .videoIcon {
+      color: #1890ff;
+      font-size: 18px;
+      cursor: pointer;
+
+      &:hover {
+        color: #40a9ff;
+      }
+    }
+  }
+} 

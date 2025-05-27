@@ -1,0 +1,79 @@
+.listContainer {
+  .searchBar {
+    margin-bottom: 24px;
+    padding: 16px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+
+  .gooseCard {
+    height: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .coverContainer {
+      position: relative;
+      height: 200px;
+      overflow: hidden;
+
+      .gooseImage {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s;
+      }
+
+      .codeOverlay {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        padding: 4px 12px;
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        border-radius: 4px;
+        font-weight: 600;
+        font-size: 14px;
+      }
+    }
+
+    &:hover .gooseImage {
+      transform: scale(1.05);
+    }
+
+    .cardTitle {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .cardContent {
+      .infoRow {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+        color: #666;
+        font-size: 14px;
+      }
+
+      .trendSection {
+        margin-top: 12px;
+        
+        > span {
+          display: block;
+          margin-bottom: 4px;
+          color: #333;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+} 

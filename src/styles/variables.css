@@ -1,0 +1,49 @@
+:root {
+  /* 农业数字化应用主题色 */
+  /* 主色调 - 清新绿色 */
+  --primary-color: #52c41a;
+  --primary-color-hover: #73d13d;
+  --primary-color-active: #389e0d;
+  --primary-1: #f6ffed;
+  --primary-2: #d9f7be;
+  --primary-3: #b7eb8f;
+  --primary-4: #95de64;
+  --primary-5: #73d13d;
+  --primary-6: #52c41a;
+  --primary-7: #389e0d;
+  --primary-8: #237804;
+  --primary-9: #135200;
+  --primary-10: #092b00;
+
+  /* 辅助色调 */
+  --success-color: #52c41a;
+  --warning-color: #faad14;
+  --error-color: #f5222d;
+  --info-color: #1890ff;
+
+  /* 中性色 */
+  --text-color: rgba(0, 0, 0, 0.85);
+  --text-color-secondary: rgba(0, 0, 0, 0.45);
+  --text-color-tertiary: rgba(0, 0, 0, 0.25);
+  --border-color-base: #d9d9d9;
+  --background-color-base: #f5f5f5;
+
+  /* 农业相关的特殊颜色 */
+  --grass-green: #7cb305;
+  --leaf-green: #5b8c00;
+  --soil-brown: #873800;
+  --sky-blue: #87ceeb;
+  --sun-yellow: #fadb14;
+  --water-blue: #13c2c2;
+
+  /* 布局相关 */
+  --layout-header-background: #ffffff;
+  --layout-sider-background: #001529;
+  --layout-body-background: #f0f2f5;
+
+  /* 阴影 */
+  --box-shadow-base: 0 2px 8px rgba(0, 0, 0, 0.09);
+  --box-shadow-card: 0 1px 2px -2px rgba(0, 0, 0, 0.16), 
+                     0 3px 6px 0 rgba(0, 0, 0, 0.12), 
+                     0 5px 12px 4px rgba(0, 0, 0, 0.09);
+} 
