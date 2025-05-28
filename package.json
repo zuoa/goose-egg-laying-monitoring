@@ -10,12 +10,12 @@
     "openapi": "max openapi"
   },
   "dependencies": {
-    "@ant-design/charts": "^2.2.1",
-    "@ant-design/icons": "^5.5.1",
+    "@ant-design/charts": "^2.3.0",
+    "@ant-design/icons": "^6.0.0",
     "@ant-design/pro-components": "^2.8.7",
     "@umijs/max": "^4.4.11",
-    "@umijs/max-plugin-openapi": "^1.0.1",
-    "antd": "^5.22.2"
+    "@umijs/max-plugin-openapi": "^2.0.3",
+    "antd": "^5.25.3"
   },
   "devDependencies": {
     "@types/react": "^18.0.33",
